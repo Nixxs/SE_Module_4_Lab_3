@@ -38,13 +38,14 @@ body, h1, h2, h3, p, ul, ol, li, form, input, button {
   /* Style lists */
   ul, ol {
     margin-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
   }
   
   /* Style links */
   a {
-    color: #333;
+    color: #080be0;
     text-decoration: none;
+    font-weight: bold;
   }
   
   a:hover {
@@ -72,8 +73,8 @@ body, h1, h2, h3, p, ul, ol, li, form, input, button {
   
   button {
     cursor: pointer;
-    background-color: #333;
-    color: white;
+    background-color: #3379d4;
+    color: rgb(0, 0, 0);
   }
   
   button:hover {
@@ -90,3 +91,41 @@ body, h1, h2, h3, p, ul, ol, li, form, input, button {
     text-align: center;
   }
   
+.application-container {
+  max-width: 80%;
+}
+
+  .calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .two-cols {
+    grid-column: span 2;
+  }
+
+  .full-cols {
+    grid-column: span 8;
+  }
+
+  .big-button {
+    width: 100%;
+  }
+
+  .reset-button{
+    width: 100%;
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #3379d4;
+}

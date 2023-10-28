@@ -14,18 +14,54 @@
         <main>
             <div class="requirements-container">
                 <h3>Requirements:</h3>
+                <ul>
+                    <li>User can input 2 numbers</li>
+                    <li>User should be able to choose from 4 operations (+, /, x, -)</li>
+                    <li>Clicking the '=' will display the result</li>
+                    <li>Clicking the 'reset' should reset to clear screen</li>
+                </ul>
             </div>
             <div class="sketch-container">
                 <h3>Sketch:</h3>
+                <img src="/img/sketch.png" alt="sketch of calculator app" />
             </div>
             <div class="lofi-container">
                 <h3>Lofi Design:</h3>
+                <a href="https://www.figma.com/proto/4twi6TaxoFaLwrzgKCLijU/lofi-calculator?type=design&node-id=1-33&t=UW1wQ89FPh2vQOHZ-1&scaling=min-zoom&page-id=0%3A1&mode=design" target="_blank">Open Lofi Prototype</a><br>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4twi6TaxoFaLwrzgKCLijU%2Flofi-calculator%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D2ZxCCmWBkIjAwB1H-1" allowfullscreen></iframe>
             </div>
             <div class="hifi-container">
                 <h3>Hifi Design:</h3>
+                <a href="https://www.figma.com/proto/4twi6TaxoFaLwrzgKCLijU/Hifi-Calculator?type=design&node-id=1-65&t=6j0aF8hCUwdnTkWI-1&scaling=min-zoom&page-id=1%3A64&starting-point-node-id=1%3A65&mode=design" target="_blank">Open Hifi Prototype</a><br>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4twi6TaxoFaLwrzgKCLijU%2FHifi-Calculator%3Ftype%3Ddesign%26node-id%3D1%253A64%26mode%3Ddesign%26t%3D2ZxCCmWBkIjAwB1H-1" allowfullscreen></iframe>
             </div>
             <div class="application-container">
                 <h3>Developed Application:</h3>
+                <div class="calculator">
+                    <div class="number-input two-cols">
+                        <input type="text" id="input-num-one" name="input-num-one">
+                    </div>
+                    <div class="operator-selector">
+                        <select title="operator-input" id="operator-input" name="operator-input">
+                            <option value="add">+</option>
+                            <option value="subtract">-</option>
+                            <option value="multiply">*</option>
+                            <option value="divide">/</option>
+                        </select>
+                    </div>
+                    <div class="number-input two-cols">
+                        <input type="text" id="input-num-two" name="input-num-two">
+                    </div>
+                    <div class="equals-button">
+                        <button onclick="alert('equals!')">=</button>
+                    </div>
+                    <div class="results-output two-cols">
+                        <input type="text" id="input-num-two" name="input-num-two" readonly>
+                    </div>
+                    <div class="reset-button full-cols">
+                        <button class="big-button" onclick="alert('reset!')">Reset</button>
+                    </div>
+                </div>
             </div>
         </main>
 
