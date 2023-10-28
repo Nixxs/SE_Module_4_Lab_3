@@ -1,3 +1,9 @@
+function reset(){
+    document.getElementById("input-num-one").value = "";
+    document.getElementById("input-num-two").value = "";
+    document.getElementById("result-output").value = "";
+}
+
 function calculate() {
     let result;
     let num_1 = Number(document.getElementById("input-num-one").value);
